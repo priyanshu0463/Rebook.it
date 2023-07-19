@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fetch book</title>
+</head>
+<body>
+    <form method="post" action="{% url 'fetch_book' %}">
+        {% csrf_token %}
+        <input type="text" name="sbook" placeholder="enter book id">
+        <button type="submit">FETCH</button>
+    </form>
+    
+</body>
+</html>

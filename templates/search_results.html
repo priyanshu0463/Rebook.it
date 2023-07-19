@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>search results</title>
+</head>
+<body>
+    <h1>Search Results</h1>
+    <ul>
+        {% for book in books %}
+            <li>
+                <h3>{{book.title}}</h3>
+                <p>Author: {{book.author}}</p>
+                <!-- <p>Description:{{book.description}}</p> -->
+                <img src={{book.image}} alt="Italian Trulli">
+                <!-- <p>thumbnaillink : {{book.image}}</p> -->
+            </li>
+        {% empty %}
+            <p>No Books found.</p>
+        {% endfor %}
+    </ul>
+    
+</body>
+</html>
