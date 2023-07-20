@@ -5,12 +5,14 @@ import "bootstrap/dist/css/bootstrap.min.css"
 // import Api from './Api';
 import Trade from './Trade';
 import About from './About';
+import {Link,useNavigate as useHistory} from "react-router-dom"
 import Shared from './Shared';
 import axios from 'axios';
 import './Api.css';
 import io from 'socket.io-client';
 import { Route, Routes,BrowserRouter as Router } from "react-router-dom";
 const socket= io.connect("http://10.113.19.100:3009");
+
 
 // to run: http://10.113.19.100:3000
 // database: python manage.py runserver 0.0.0.0:9595
@@ -29,6 +31,7 @@ function Api(){
   const [pages, setPages] = useState('');
   const [data,setData]=useState([]);
   const [message,setMessage]=useState("");
+  const history=useHistory()
   // const [redirectUrl,setRedirectUrl]=useState("");
 
   // const handleRedirect=(url)=>{
@@ -48,6 +51,7 @@ function Api(){
     setMessage(message);
     console.log(message);
     socket.emit("send_message",{message});  
+    history("/shared")
   };
   // <button onClick={()=>{
     //   sendMessage(item.title);
@@ -256,7 +260,7 @@ function Api(){
       {/* <h1 style={{textAlign: 'center', fontWeight:'bold'}} > <u>Library</u> </h1> */}
       <div style={{ flex: 1, textAlign: 'center' }}>
         {/* Image container */}
-        <img src="library2.png" alt="Your Image" style={{width:"300px"}} />
+        <img src="lib.png" alt="Your Image" style={{width:"200px"}} />
       </div>
       <br />
       

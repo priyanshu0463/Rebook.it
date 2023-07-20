@@ -7,7 +7,7 @@ export default function Navbar() {
         <nav className="navbar navbar-expand-lg bg-body-tertiary">
    
    <div class="container-fluid">
-     <Link class="navbar-brand" to="/">
+     <Link class="navbar-brand" to="/api">
        <img src="logo.png" alt="Logo" width="250" height="100"  />
       
      </Link>
