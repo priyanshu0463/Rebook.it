@@ -238,7 +238,7 @@ function Api(){
             <input type="text" value={userInput} onChange={handleInputChange} onKeyDown={handleKeyDown} 
             placeholder="Enter book name" />
             
-            <button type="button" class="btn btn-outline-success" onClick={handleButtonClick}  className="mt-3" >Search</button>
+            <button type="button" class="btn btn-outline-info" onClick={handleButtonClick}  className="mt-3" >Search</button>
           </div>
           
           <div className="result-box">
