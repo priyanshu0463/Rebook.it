@@ -200,24 +200,57 @@ function Api(){
 
   return (
     <div>
-      <Navbar/>
       {/* <>
       <Navbar/>
-              <Routes>
-              <Route exact path="/" element={ <Api/> }/>
-              <Route exact path="/trade" element={<Trade/> } />
-              <Route exact path="/shared" element={<Shared />} />
-              <Route exact path="/about" element={<About/>} />
-            </Routes>
-      </> */}
+      <Routes>
+      <Route exact path="/" element={ <Api/> }/>
+      <Route exact path="/trade" element={<Trade/> } />
+      <Route exact path="/shared" element={<Shared />} />
+      <Route exact path="/about" element={<About/>} />
+      </Routes>
+    </> */}
 
 
 
+    <div class="rounded-bottom-3"
+     style={{
+      background: "url('back.jpg') no-repeat center center fixed",
+      backgroundSize:"100% 100%",
+      // borderRadius:'50px'
+    }}>
+    <Navbar/ >
+    <div id='welcome-page' class="frontpage" style={{
+    marginTop:"0",
+    borderBottomLeftRadius: "1rem",
+    borderBottomRightRadius: "1rem",
+    marginBottom:"2rem",
+    }}>
+      
 
-      <br />
+      <h1>WELCOME</h1>
+      <h1>TO</h1>
+      <h1>Rebook.it</h1>
+      <h3>click down to get started</h3>
+      <button type="button" class="btn btn-light" style={{fontSize:"1.6rem"}}>Get Started</button>
+    </div>
+    </div>
+
+    <div id='about-us' class="about">
+        <div class='about-in'>
+          <div>
+
+          <h1>About Us</h1>
+          <p>illing to trade, and discover a diverse array of titles from others in your vicinity. Whether you're looking to declutter your bookshelf, explore
+          new genres, or connect with like-minded readers, BookSwapHub is your go-</p>
+          </div>
+          <img src="libside.jpg" alt="" />
+
+        </div>
+    </div>
+      
     
     
-    <div 
+    <div id='book-search'
     class="card1" style={{
       width: '25rem',
       minHeight: '17rem',
@@ -239,6 +272,9 @@ function Api(){
             placeholder="Enter book name" />
             
             <button type="button" class="btn btn-outline-info" onClick={handleButtonClick}  className="mt-3" >Search</button>
+          </div>
+          <div>
+
           </div>
           
           <div className="result-box">
@@ -275,7 +311,7 @@ function Api(){
             </div>
         ))}
       </div> */}
-      <div >
+      <div id='library-page'>
         <div class='bookcard' style={{display:'flex',flexWrap:'wrap',margin: '10px',}}>
          
         {data.map((item)=>(

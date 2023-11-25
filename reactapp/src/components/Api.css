@@ -29,6 +29,7 @@
   align-items: center;
   justify-content: center;
   color: rgb(220, 108, 17);
+  font-family: Arial, sans-serif;
 }
 
 .navbar-brand {
@@ -66,4 +67,69 @@
 
 .book-name {
   text-transform: capitalize;
+}
+
+.frontpage{
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      display: flex;
+      flex-direction:column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      position: relative;
+      
+      background-size: cover;
+      color: #ffffff; /* Set the text color to white */
+      font-family: Arial, sans-serif;
+      /* background:rgba(0,0,0,0.5); */
+}
+.frontpage::before{
+  content:"";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background:rgba(0,0,0,0.55);
+}
+.frontpage h1 {
+  margin: 0;
+  font-size: 7rem;
+  color: #f7f4f4;
+  z-index: 1;
+  font-weight: 800;
+}
+.frontpage button{
+  
+  margin: 30px;
+  z-index: 1;
+}
+.frontpage h3{
+  color: #c5c5c5;
+  z-index: 1;
+}
+.frontpage h1:first-child{
+  margin-bottom:10px;
+}
+
+.about {
+  margin: 1rem;
+  padding: 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction:column;
+  /* justify-content: center;
+  align-items: center; */
+  min-height: 100vh;
+  position: relative;
+  
+  /* background-size: cover; */
+  
+  font-family: Arial, sans-serif;
+
+}
+.about-in{
+  padding: 15rem;
+  
 }

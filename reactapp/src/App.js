@@ -21,9 +21,9 @@ function App() {
         <Router>
           <AuthProvider>
             <Routes>
-              <Route path="/signup" element={<Signup />}/>
-              <Route path="/" element={<Login />}/>
-              <Route exact path="/api" element={ <Api/> }/>
+              {/* <Route path="/signup" element={<Signup />}/>
+              <Route path="/" element={<Login />}/> */}
+              <Route exact path="/" element={ <Api/> }/>
               <Route exact path="/trade" element={<Trade/> } />
               <Route exact path="/shared" element={<Shared />} />
               <Route exact path="/about" element={<About/>} />

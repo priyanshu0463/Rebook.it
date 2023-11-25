@@ -1,40 +1,56 @@
 import React from 'react'
 import {  Link } from "react-router-dom"
+import './Navbar.css';
 
 export default function Navbar() {
   return (
-    <div>
-        <nav className="navbar navbar-expand-lg bg-body-tertiary">
+    <div style={{backgroundColor: "rgba(0, 0, 0, 0.5)",}} >
+        <nav id='navbar' class="navbar navbar-expand-lg rounded-bottom-5" style={{marginBottom:"0",
+      fontFamily: "Arial, sans-serif",
+      fontSize:"1rem",
+      borderRadius: "10px",
+      backgroundColor: "rgba(0, 0, 0, 0.6)",
+      
+      
+      
+
+      }}>
    
    <div class="container-fluid">
      <Link class="navbar-brand" to="/api">
-       <img src="logo.png" alt="Logo" width="250" height="100"  />
+       <img src="logo.png" alt="Logo" width="220" height="70"  />
       
      </Link>
    </div>
  
      
-   <div className="container-fluid">
+   <div className="container-fluid " >
      <Link className="navbar-brand" href="/"></Link>
      <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
        <span className="navbar-toggler-icon"></span>
      </button>
-     <div className="collapse navbar-collapse" id="navbarSupportedContent">
-       <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+     <div className="collapse navbar-collapse" id="navbarSupportedContent text-white">
+       <ul class="navbar-nav me-auto mb- mb-lg-0 " >
          <li className="nav-item">
-           <Link className="nav-link active" aria-current="page" to="/">Library</Link>
+           <Link className="nav-link active text-white fs-5 
+            fw-bold mr-5" aria-current="page" to="/">Home</Link>
          </li>
          <li className="nav-item">
-           <Link className="nav-link active" aria-current="page" to="/shared">Shared</Link>
+           <Link className="nav-link active text-white fs-5 
+            fw-bold" aria-current="page" to="/about">About Us</Link>
          </li>
          <li className="nav-item">
-           <Link className="nav-link active" aria-current="page" to="/trade">MyTrades</Link>
-         </li>
-         <li className="nav-item">
-           <Link className="nav-link active" aria-current="page" to="/about">About Us</Link>
+           <Link className="nav-link active text-white fs-5 
+            fw-bold" aria-current="page" to="/about">Book</Link>
          </li> 
          <li className="nav-item">
-           <Link className="nav-link active" aria-current="page" to="/test">test</Link>
+           <Link className="nav-link active text-white fs-5 
+            fw-bold" aria-current="page" to="/trade">Library</Link>
+         </li>
+         
+         <li className="nav-item">
+           <Link className="nav-link active text-white fs-5 
+            fw-bold" aria-current="page" to="/test">Conatct Us</Link>
          </li> 
          {/* <li className="nav-item">
            <Link className="nav-link active" aria-current="page" to="/cart">cart</Link>
@@ -59,7 +75,7 @@ export default function Navbar() {
        </ul>
        <form className="d-flex" role="search">
          <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
-         <button className="btn btn-outline-success" type="submit">Search</button>
+         <button className="btn btn-outline-light" type="submit">Search</button>
        </form>
      </div>
    </div>
