@@ -223,7 +223,7 @@ function Api(){
     marginTop:"0",
     borderBottomLeftRadius: "1rem",
     borderBottomRightRadius: "1rem",
-    marginBottom:"2rem",
+    // marginBottom:"2rem",
     }}>
       
 
@@ -236,13 +236,41 @@ function Api(){
     </div>
 
     <div id='about-us' class="about">
+      <div>
+
+      </div>
         <div class='about-in'>
+          <div class='text-box'>
+          <h1>About Us</h1>
+
           <div>
 
-          <h1>About Us</h1>
-          <p>illing to trade, and discover a diverse array of titles from others in your vicinity. Whether you're looking to declutter your bookshelf, explore
-          new genres, or connect with like-minded readers, BookSwapHub is your go-</p>
+
+          <article>
+        <h3>Mission:</h3>
+        <p>
+          Our mission is simple yet impactful – to create a global community of book enthusiasts who share a passion for reading and a commitment to environmental conservation. We strive to reduce paper wastage and contribute to a greener planet by encouraging the exchange of books once they have fulfilled their purpose with one reader.
+        </p>
+      </article>
+
+      <article>
+        <h3>How It Works:</h3>
+        <ol>
+          <li><strong>Share Your Reads:</strong> st Once you've completed a captivating book and are ready to pass it on, simply log in to ReBook.it and list your book for exchange. Share your thoughts on the book and any personalized notes you'd like to pass along to the next reader.</li>
+          <li><strong>Discover New Treasures:</strong> Explore a diverse collection of books available for exchange. Connect with fellow readers, discover new genres, and build a virtual bookshelf filled with stories waiting to be explored.</li>
+          <li><strong>Exchange and Connect:</strong> When you find a book that piques your interest, propose an exchange with its owner. Coordinate logistics, send and receive books, and enjoy the satisfaction of sharing literary adventures with like-minded individuals.</li>
+        </ol>
+      </article>
+
+      <article>
+        <h3>Environmental Impact:</h3>
+        <p>
+          By participating in book exchanges, you're not just swapping stories – you're contributing to a more sustainable future. Every book exchanged on ReBook.it means one less new book printed, reducing the demand for paper production and minimizing the carbon footprint associated with book manufacturing.
+        </p>
+      </article>
           </div>
+    </div>
+        
           <img src="libside.jpg" alt="" />
 
         </div>
