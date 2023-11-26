@@ -247,25 +247,27 @@ function Api(){
 
 
           <article>
-        <h3>Mission:</h3>
+            <p>
+            At ReBook.it, we believe in the transformative power of literature and its ability to not only enrich minds but also foster a sense of community and environmental responsibility. Our platform is dedicated to facilitating the exchange of books among avid readers, promoting a sustainable and eco-friendly approach to enjoying literature.
+            </p>
+        
         <p>
           Our mission is simple yet impactful – to create a global community of book enthusiasts who share a passion for reading and a commitment to environmental conservation. We strive to reduce paper wastage and contribute to a greener planet by encouraging the exchange of books once they have fulfilled their purpose with one reader.
         </p>
       </article>
 
-      <article>
-        <h3>How It Works:</h3>
-        <ol>
-          <li><strong>Share Your Reads:</strong> st Once you've completed a captivating book and are ready to pass it on, simply log in to ReBook.it and list your book for exchange. Share your thoughts on the book and any personalized notes you'd like to pass along to the next reader.</li>
-          <li><strong>Discover New Treasures:</strong> Explore a diverse collection of books available for exchange. Connect with fellow readers, discover new genres, and build a virtual bookshelf filled with stories waiting to be explored.</li>
-          <li><strong>Exchange and Connect:</strong> When you find a book that piques your interest, propose an exchange with its owner. Coordinate logistics, send and receive books, and enjoy the satisfaction of sharing literary adventures with like-minded individuals.</li>
-        </ol>
-      </article>
+      
 
       <article>
-        <h3>Environmental Impact:</h3>
+        
         <p>
           By participating in book exchanges, you're not just swapping stories – you're contributing to a more sustainable future. Every book exchanged on ReBook.it means one less new book printed, reducing the demand for paper production and minimizing the carbon footprint associated with book manufacturing.
+        </p>
+        <p>
+          Embrace the joy of reading while actively participating in the global movement towards environmental sustainability. ReBook.it invites you to be a part of our community, connecting with fellow readers, fostering a love for literature, and making a positive impact on the planet.
+        </p>
+        <p>
+          we believe in the power of storytelling to change the world, one book at a time. <a href="#">Join us</a> on this journey towards a greener, more interconnected future. Happy reading!
         </p>
       </article>
           </div>
@@ -275,10 +277,15 @@ function Api(){
 
         </div>
     </div>
+
+    <div id="add-book" class="add-book">
+      <h1 style={{textAlign:"center",padding:"2rem",fontWeight:"900",fontSize:"3rem"}}>Create your Library</h1>
+
+    </div>
       
     
     
-    <div id='book-search'
+    <div id='book-search0'
     class="card1" style={{
       width: '25rem',
       minHeight: '17rem',
@@ -320,6 +327,9 @@ function Api(){
           </div>
         </div>
       </div>
+
+
+
       <hr  />
       {/* <h1 style={{textAlign: 'center', fontWeight:'bold'}} > <u>Library</u> </h1> */}
       <div style={{ flex: 1, textAlign: 'center' }}>
