@@ -249,9 +249,7 @@ function Api(){
           <article>
             <p>
             At ReBook.it, we believe in the transformative power of literature and its ability to not only enrich minds but also foster a sense of community and environmental responsibility. Our platform is dedicated to facilitating the exchange of books among avid readers, promoting a sustainable and eco-friendly approach to enjoying literature.
-            </p>
-        
-        <p>
+            
           Our mission is simple yet impactful – to create a global community of book enthusiasts who share a passion for reading and a commitment to environmental conservation. We strive to reduce paper wastage and contribute to a greener planet by encouraging the exchange of books once they have fulfilled their purpose with one reader.
         </p>
       </article>
@@ -262,24 +260,30 @@ function Api(){
         
         <p>
           By participating in book exchanges, you're not just swapping stories – you're contributing to a more sustainable future. Every book exchanged on ReBook.it means one less new book printed, reducing the demand for paper production and minimizing the carbon footprint associated with book manufacturing.
-        </p>
-        <p>
-          Embrace the joy of reading while actively participating in the global movement towards environmental sustainability. ReBook.it invites you to be a part of our community, connecting with fellow readers, fostering a love for literature, and making a positive impact on the planet.
-        </p>
-        <p>
-          we believe in the power of storytelling to change the world, one book at a time. <a href="#">Join us</a> on this journey towards a greener, more interconnected future. Happy reading!
+        {/* <br /><br /> */}
+          we believe in the power of storytelling to change the world, one book at a time.  <br /> <br /> <a href="#">Join us</a> on this journey towards a greener, more interconnected future. Happy reading!
         </p>
       </article>
           </div>
     </div>
-        
+        <div style={{paddingTop:"2.5rem",minHeight:"50rem"
+
+        }}>
+
           <img src="libside.jpg" alt="" />
+        </div>
 
         </div>
     </div>
 
     <div id="add-book" class="add-book">
-      <h1 style={{textAlign:"center",padding:"2rem",fontWeight:"900",fontSize:"3rem"}}>Create your Library</h1>
+      <div class="lib-main">
+      <h1 style={{paddingBottom:"1rem",paddingLeft:"1rem",fontWeight:"900",fontSize:"3rem",}}>Add Books</h1>
+      <div class="search-box">
+
+      </div>
+
+      </div>
 
     </div>
       
@@ -302,7 +306,7 @@ function Api(){
           <span className="navbar-brand" >Search Your Book <p>  </p></span>
         </nav>
         <div className="container">
-          <div className="search-box">
+          <div className="search-box0">
             <input type="text" value={userInput} onChange={handleInputChange} onKeyDown={handleKeyDown} 
             placeholder="Enter book name" />
             
