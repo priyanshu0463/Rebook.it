@@ -27,24 +27,13 @@ function Api(){
   const [result, setResult] = useState('');
   const [imageUrl, setImageUrl] = useState('');
   const [author, setAuthor] = useState('');
+  const [titl, setTitle] = useState('');
   const [genre, setGenre] = useState('');
   const [pages, setPages] = useState('');
   const [data,setData]=useState([]);
   const [message,setMessage]=useState("");
   const history=useHistory()
-  // const [redirectUrl,setRedirectUrl]=useState("");
 
-  // const handleRedirect=(url)=>{
-  //   setRedirectUrl(url);
-  // };
-  // if
-  
-  // const combinedClickTrade = async(e)=>{
-  //   setMessage(e);
-  //   sendMessage();
-
-
-  // };
 
 
   const sendMessage = (message) =>{
@@ -138,6 +127,7 @@ function Api(){
         if (found) {
          
           const bookInfo = getBookInfo(data, userInput);
+          setTitle(userInput);
           setImageUrl(bookInfo.imageLink);
           setAuthor(bookInfo.author);
           setGenre(bookInfo.genre);
@@ -278,8 +268,32 @@ function Api(){
 
     <div id="add-book" class="add-book">
       <div class="lib-main">
-      <h1 style={{paddingBottom:"1rem",paddingLeft:"1rem",fontWeight:"900",fontSize:"3rem",}}>Add Books</h1>
+      <h1 style={{paddingBottom:"1rem",paddingLeft:"0rem",fontWeight:"900",fontSize:"3.2rem",}}>Add Books <br /> <hr /> </h1>
       <div class="search-box">
+        <div class="input-box">
+        <div style={{paddingRight:".8rem"}}>
+          
+      <input type="text" value={userInput} onChange={handleInputChange} onKeyDown={handleKeyDown} 
+            placeholder="Enter book name " />
+        </div>
+      <button type="button"  onClick={handleButtonClick} >Search</button>
+      <hr />
+        </div>
+
+        <div class="book-info">
+          <div class="book-img">
+          <img class="book" src={imageUrl} style={{ width: '20rem', height: '25em', padding:"1.5rem", }} />
+            <hr color='black'/>
+          <p >Title: {titl}</p>
+          <p >Author: {author}</p>
+          <p >Genre: {genre}</p>
+          
+          <button className="add-book-button" onClick={handleCombinedClick} >Add Book</button>
+          </div>
+          
+
+
+        </div>
 
       </div>
 
@@ -289,7 +303,7 @@ function Api(){
       
     
     
-    <div id='book-search0'
+    {/* <div id='book-search0'
     class="card1" style={{
       width: '25rem',
       minHeight: '17rem',
@@ -320,7 +334,7 @@ function Api(){
             
             <p></p>
             {result && <p className="result">{result}</p>}
-            {imageUrl && <img className="book-image" src={imageUrl} alt="Book Cover" width="150" height="200" class="d-inline-block 2align-center" />}
+           <img className="book-image" src={imageUrl} alt="Book Cover" width="150" height="200" class="d-inline-block 2align-center" />
             {userInput && <p className="book-name">: {userInput}</p>}
             {author && <p className="book-info">Author: {author}</p>}
             {genre && <p className="book-info">Genre: {genre}</p>}
@@ -330,15 +344,17 @@ function Api(){
            
           </div>
         </div>
-      </div>
+      </div> */}
 
 
 
-      <hr  />
+      {/* <hr  /> */}
       {/* <h1 style={{textAlign: 'center', fontWeight:'bold'}} > <u>Library</u> </h1> */}
       <div style={{ flex: 1, textAlign: 'center' }}>
         {/* Image container */}
-        <img src="lib.png" alt="Your Image" style={{width:"200px"}} />
+        <h1 style={{ fontSize: "3rem", fontWeight: "800", padding: "1rem", textDecoration: "underline" }}>
+  Library
+</h1>
       </div>
       <br />
       
