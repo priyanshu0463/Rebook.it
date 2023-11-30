@@ -26,3 +26,25 @@ Rebook.it is a platform designed to facilitate the exchange of knowledge and sto
 - **Literary Exploration**: Discover new titles and explore different genres.
 
 ## Get Started
+
+### Clone the repository to your local machine:
+
+    git clone https://github.com/priyanshu0463/Rebook.it.git
+
+### Navigate to the project directory:
+
+    cd Rebook.it
+
+### Run the django backend
+
+    python manage.py runserver 0.0.0.0:9595
+
+### Navigate to the reactapp front-end directory
+    
+    cd reactapp
+
+### Run the React-app
+
+    npm start
+
+
