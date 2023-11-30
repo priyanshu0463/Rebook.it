@@ -17,7 +17,7 @@ Rebook.it is a platform designed to facilitate the exchange of knowledge and sto
 
 - **Book Listings**: Easily list and discover books available for trade.
 
-## Why BookSwapHub?
+## Why Rebook.it?
 
 - **Connect with Like-Minded Readers**: Join a community of passionate readers.
 
